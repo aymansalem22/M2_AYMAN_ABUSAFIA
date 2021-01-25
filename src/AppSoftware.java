@@ -1,6 +1,6 @@
 
 public class AppSoftware {
-
+//atributos
     private String lenguajeDeProgramacion;
     private boolean tiene_Datos;
     private double complejidad;
