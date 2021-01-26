@@ -9,6 +9,6 @@ package classes;
  *
  * @author sayma
  */
-public class NewClass {
+public class asd {
     
 }
