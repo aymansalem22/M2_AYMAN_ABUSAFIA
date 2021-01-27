@@ -9,7 +9,7 @@ public abstract class AppSoftware {
     private int codigoLineas;
     private int casosTest;
 
-   
+  
 
     public String getLenguajeDeProgramacion() {
         return lenguajeDeProgramacion;
@@ -66,7 +66,13 @@ public abstract class AppSoftware {
         return valor;
     }
     
-    public void tecnology(){
-        System.out.println("father clase");
+    public abstract void tecnology();
+
+    @Override
+    public String toString() {
+        return "AppSoftware{" + "lenguajeDeProgramacion=" + lenguajeDeProgramacion + ", tiene_Datos=" + tiene_Datos + ", complejidad=" + complejidad + ", codigoLineas=" + codigoLineas + ", casosTest=" + casosTest + '}';
     }
+    
+    
+    
 }
