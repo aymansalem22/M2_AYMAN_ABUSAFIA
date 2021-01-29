@@ -54,7 +54,7 @@ public class MainArray {
             }
 
         } else {
-            System.out.println("game over");
+            System.out.println("out of program!!");
         }
 
     }
