@@ -80,7 +80,7 @@ public class MainArrayList {
                 System.out.println(appiott);
             }
         } else {
-            System.out.println("game over");
+            System.out.println("outside the loop");
         }
 
     }
