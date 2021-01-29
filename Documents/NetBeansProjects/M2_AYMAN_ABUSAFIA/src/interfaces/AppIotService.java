@@ -5,7 +5,7 @@ import classes.AppIot;
 
 
 public interface AppIotService {
-   public AppIot Appiot(); 
+   public AppIot createAPP(); 
 }
 
 

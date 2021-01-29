@@ -1,5 +1,8 @@
 package classes;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class AppMobile extends AppSoftware {
 
     private boolean usaHibrida;
@@ -9,9 +12,25 @@ public class AppMobile extends AppSoftware {
     }
 
     public AppMobile(boolean usaHibrida,String[]permios) {
-        super();
+        //super();
         this.usaHibrida = usaHibrida;
         this.Permisos=permios;
+    }
+
+    public boolean isUsaHibrida() {
+        return usaHibrida;
+    }
+
+    public void setUsaHibrida(boolean usaHibrida) {
+        this.usaHibrida = usaHibrida;
+    }
+
+    public String[] getPermisos() {
+        return Permisos;
+    }
+
+    public void setPermisos(String[] Permisos) {
+        this.Permisos = Permisos;
     }
 
     @Override
@@ -26,9 +45,10 @@ public class AppMobile extends AppSoftware {
 
     @Override
     public String toString() {
-        return "AppMobile{" + "usaHibrida=" + usaHibrida + ", Permisos=" + Permisos + '}';
+        return "AppMobile{" + "usaHibrida=" + usaHibrida + ", Permisos=" + Arrays.toString(Permisos) + '}';
     }
 
     
-    
 }
+ 
+
