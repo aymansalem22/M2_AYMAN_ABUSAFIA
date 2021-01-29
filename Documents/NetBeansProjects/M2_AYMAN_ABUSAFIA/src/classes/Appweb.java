@@ -1,22 +1,31 @@
 package classes;
 
 
-public class Appweb extends AppSoftware {
+public class AppWeb extends AppSoftware {
    private String backEnd;
    private String fronEnd;
 
-   public Appweb(String X,String Y, String Z) {
+ 
+
+   public AppWeb(String Y, String Z) {
+         super();
         this.backEnd = Y;
         this.fronEnd = Z;
-        super.setLenguajeDeProgramacion(X);
+        
     }
 
     @Override
     public void tecnology() {
-        
-        System.out.println("The programming language used is "+ backEnd+" the backend framework is "+ fronEnd+ " and the frontend framework is "+ super.getLenguajeDeProgramacion());
+        //use cconcat string 
+        String info="The programming language used is :".concat(super.getLenguajeDeProgramacion())+"\n the backend framework is : ".concat(backEnd)+"\nand the frontend framework is :".concat(fronEnd);
+        System.out.println(info);
       
       
+    }
+
+    @Override
+    public String toString() {
+        return "AppWeb{" + "backEnd=" + backEnd + ", fronEnd=" + fronEnd + '}';
     }
     
     
@@ -25,3 +34,4 @@ public class Appweb extends AppSoftware {
    
    
 }
+
