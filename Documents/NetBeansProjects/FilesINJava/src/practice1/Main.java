@@ -1,6 +1,6 @@
 
 package practice1;
-//practice files in java
+//practice Files in Java
 public class Main {
 
     public static void main(String[] args) {
